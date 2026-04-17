@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "style.css"
+</head>
+
+<div class="app">
+
+  <header class="header">
+    <h1>FlashLearn</h1>
+    <button onClick="showCreatedCardbox()"> New Deck</button>
+    <button onClick="deleteCreatedCardbox()"> Delete Deck</button>
+  </header>
+
+  <div class="container">
+
+    <aside class="sidebar">
+      <ul class="deck-list">
+        <li class="deck active">System Design</li>
+        <li class="deck">Java</li>
+      </ul>
+    </aside>
+
+    <main class="main">
+
+      <h2 class="deck-title"> Deck Title</h2>
+
+      <div class="toolbar">
+        <input type="text" placeholder="Search">
+        <button>Shuffle</button>
+        <button>+ New Card</button>
+      </div>
+      <div id="flashCard" class="flashCard-container">
+        <div class="front">
+          <p id="questions">Questions will appear here</p>
+        </div>
+        <div class="back">
+          <p id="questions">Questions will appear back</p>
+        </div>
+      </div>
+      <div class="controls">
+        <button>Prev</button>
+        <button>Flip</button>
+        <button>Next</button>
+      </div>
+
+    </main>
+  </div>
+
+  <footer class="footer">
+    Use arrows or space to flip cards
+  </footer>
+
+</div>
+
+</html>
